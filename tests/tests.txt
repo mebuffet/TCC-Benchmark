@@ -1,0 +1,10 @@
+timeout 15 30 45 60
+memory 128 256 512 1024
+payload 100K 200K 400K 800K (LOW MEDIUM HIGH ULTRA)
+concurrency 100 200 400 800
+
+1        128          256          512         1024
+100K     -            -            -            -
+200K     -            -            -            -
+400K     -            -            -            -
+800K     -            -            -            -

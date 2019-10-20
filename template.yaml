@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  ServerlessWordCounter:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: WordCounter
+      Handler: function.handler
+      Timeout: 1
+      CodeUri:
+        Bucket: cloudmarking
+        Key: package.zip
+      Runtime: python3.6
+      MemorySize: 128
+      Events:
+        WordCounterApi:
+          Type: Api
+          Properties:
+            Path: /WordCounter
+            Method: POST
+Outputs:
+  APIPostEndpoint:
+    Value:
+      Fn::Join:
+      - ''
+      - - https://
+        - Ref: ServerlessRestApi
+        - .execute-api.
+        - Ref: AWS::Region
+        - .amazonaws.com/Prod/WordCounter

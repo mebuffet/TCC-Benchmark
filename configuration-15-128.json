@@ -1,0 +1,14 @@
+{
+  "region"              : "sa-east-1",
+  "access_key_id"       : "",
+  "secret_access_key"   : "",
+  "template_file"       : "template.yaml",
+  "function_zip"        : "package.zip",
+  "bucket_name"         : "cloudmarking",
+  "function_name"       : "WordCounter",
+  "period"              : "60",
+  "payload"             : ["LOW", "MEDIUM", "HIGH"],
+  "function_memory"     : ["128"],
+  "function_timeout"    : ["15"],
+  "concurrents"         : ["1", "10", "100"]
+}

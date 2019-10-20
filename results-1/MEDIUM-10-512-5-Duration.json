@@ -1,0 +1,11 @@
+[
+	{
+		"Average": 4160.28,
+		"Maximum": 5005.05,
+		"Minimum": 2787.21,
+		"SampleCount": 10.0,
+		"Sum": 41602.799999999996,
+		"Timestamp": "2018-06-20 19:42:00+00:00",
+		"Unit": "Milliseconds"
+	}
+]
